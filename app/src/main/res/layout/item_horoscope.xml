@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -18,6 +19,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/dancing"
+        android:textSize="20sp"
+        android:textColor="@color/secondary"
         app:layout_constraintTop_toBottomOf="@+id/ivHoroscope"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
