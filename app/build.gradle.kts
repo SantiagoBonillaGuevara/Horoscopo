@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -44,6 +46,12 @@ dependencies {
     //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    //daeger hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-compiler:2.48")
+
+    //recyclerview
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
