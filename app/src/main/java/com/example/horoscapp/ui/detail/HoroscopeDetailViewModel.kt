@@ -8,7 +8,6 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HoroscopeDetailViewModel @Inject constructor(): ViewModel() {
-
     private var _state = MutableStateFlow<HoroscopeDetailState>(HoroscopeDetailState.Loading)
     val state: StateFlow<HoroscopeDetailState> = _state
 }
